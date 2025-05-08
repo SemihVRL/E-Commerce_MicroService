@@ -12,7 +12,7 @@ namespace E_Commerce.Order.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=SEMIH\\SQLEXPRESS;Initial Catalog=E-CommerceOrderDb;Integrated Security=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=localhost,1434;Initial Catalog=E-CommerceOrderDb;User=sa;Password=123456aA*;TrustServerCertificate=True;");
         }
 
         public DbSet <Address> Addresses { get; set; }
